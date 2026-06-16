@@ -1,67 +1,459 @@
-Natalie Kang
-Projects
-About
-GitHub
-GTM · Operations · AI
-Building things that make GTM teams move faster.
-Senior operator with 15+ years across venture, family office, and cross-border infrastructure. Currently exploring what happens when you put AI tools in the hands of a commercial team — and building the answers.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Natalie Kang — GTM Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-ElevenLabs API
-GTM Operations
-APAC
-Voice AI
-Event Intelligence
-Chief of Staff
-Projects — built with ElevenLabs API
-01
-Event Intelligence
-SuperAI 2026 — Who to meet and why.
-Pre-event attendee intelligence for the ElevenLabs APAC team. 12 priority contacts at SuperAI 2026 scored by pipeline fit, seniority, and strategic value. Click any card to hear a voiced briefing — who they are, what to say, and what to watch out for.
+    :root {
+      --ink:          #0e0e0e;
+      --paper:        #f7f6f2;
+      --accent:       #1a3a2a;
+      --accent-light: #2d6647;
+      --muted:        #6b6b6b;
+      --rule:         #d8d5cc;
+      --tag-bg:       #e8f0eb;
+      --tag-fg:       #1a3a2a;
+      --card-bg:      #ffffff;
+    }
 
-ElevenLabs API
-APAC GTM
-Voice Briefings
-Scraped Data
-Open tool
-↗
-02
-GM Productivity
-GM Briefing Tool — meeting prep in under a minute.
-Paste a meeting brief — prospect context, key talking points, watch-outs — and get a clean voiced summary in seconds. Built for high-velocity APAC GTM teams where the GM has 20 minutes between meetings and needs to be sharp walking in the door.
+    html { scroll-behavior: smooth; }
 
-ElevenLabs API
-Text to Speech
-GTM Ops
-Productivity
-Open tool
-↗
-About
-I'm a senior operator based in Singapore with a background spanning DBS investment advisory, single-family office PE execution, submarine cable infrastructure (authored Malaysia's first majority foreign-owned non-incumbent operator licence), and SC Ventures risk governance.
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      min-height: 100vh;
+    }
 
-Most recently I joined a climate tech venture as the first non-technical hire and built commercial, governance, and KYC functions from scratch — including a USD 1.5M pipeline in approximately five months.
+    /* ── HEADER ─────────────────────────────────────── */
+    header {
+      padding: 22px 52px;
+      border-bottom: 1px solid var(--rule);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.05rem;
+      letter-spacing: -0.01em;
+    }
+    .logo span { color: var(--accent-light); }
+    nav { display: flex; gap: 28px; }
+    nav a {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--muted);
+      text-decoration: none;
+      letter-spacing: 0.01em;
+      transition: color 0.15s;
+    }
+    nav a:hover { color: var(--ink); }
 
-These projects came out of a simple question: what does a GTM Chief of Staff look like if they actually use the product they're supporting? Everything here was built to demonstrate how I'd operate on day one — using ElevenLabs' own API to make the APAC team faster.
+    /* ── HERO ───────────────────────────────────────── */
+    .hero {
+      padding: 88px 52px 72px;
+      max-width: 900px;
+    }
+    .eyebrow {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent-light);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .eyebrow::after {
+      content: '';
+      display: block;
+      width: 36px;
+      height: 1px;
+      background: var(--accent-light);
+    }
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2.6rem, 5.5vw, 4.2rem);
+      line-height: 1.08;
+      letter-spacing: -0.025em;
+      margin-bottom: 24px;
+      max-width: 780px;
+    }
+    h1 em {
+      font-style: italic;
+      color: var(--accent-light);
+    }
+    .hero-body {
+      font-size: 1rem;
+      color: var(--muted);
+      line-height: 1.7;
+      max-width: 560px;
+      margin-bottom: 36px;
+    }
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.64rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 5px 11px;
+      background: var(--tag-bg);
+      color: var(--tag-fg);
+      border-radius: 2px;
+    }
 
-15+
-Years across venture, family office, and infrastructure
-SGD
-Singapore Citizen · Based in Singapore
-APAC
-Cross-border experience across SEA, Japan, Korea, India
-0→1
-First non-technical hire · Built commercial function from scratch
-Why ElevenLabs
-01 · Product Conviction
-I built with it before applying.
-Every tool on this page runs on ElevenLabs' API. Klarna cut TTR 10x. Revolut cut it 8x. Deutsche Telekom is deploying in-network AI agents. I understand what ElevenLabs is actually selling and why enterprise buyers buy it.
+    /* ── DIVIDER ────────────────────────────────────── */
+    .divider {
+      height: 1px;
+      background: var(--rule);
+      margin: 0 52px;
+    }
 
-02 · APAC Grounding
-The region is not an abstraction to me.
-I've worked across Singapore, Malaysia, Japan, Korea, and Southeast Asia. I know how enterprise decisions get made here, who the right contacts are, and what it takes to move from relationship to pipeline in APAC markets.
+    /* ── SECTION LABEL ──────────────────────────────── */
+    .section-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.66rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 32px;
+    }
 
-03 · Operator Instinct
-I build the infrastructure, not just the plan.
-I've authored greenfield regulatory submissions, built KYC and governance functions, and managed cross-border deal execution. A CoS role means nothing slips — I'm the person who makes sure it doesn't.
+    /* ── PROJECTS ───────────────────────────────────── */
+    .projects {
+      padding: 64px 52px;
+    }
+    .project-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--rule);
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      overflow: hidden;
+      margin-top: 0;
+    }
+    .project-card {
+      background: var(--card-bg);
+      padding: 36px 32px;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: inherit;
+      transition: background 0.15s;
+      position: relative;
+    }
+    .project-card:hover { background: #fafaf8; }
+    .project-card:hover .arrow { transform: translate(3px, -3px); }
 
-Natalie Kang · Singapore · github.com/natknataliek
-Built with ElevenLabs API
+    .project-num {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.8rem;
+      color: var(--rule);
+      line-height: 1;
+      margin-bottom: 24px;
+    }
+    .project-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      background: var(--tag-bg);
+      color: var(--tag-fg);
+      border-radius: 2px;
+      display: inline-block;
+      margin-bottom: 16px;
+      align-self: flex-start;
+    }
+    .project-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.5rem;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+    }
+    .project-desc {
+      font-size: 0.86rem;
+      color: var(--muted);
+      line-height: 1.65;
+      margin-bottom: 24px;
+      flex: 1;
+    }
+    .project-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 24px;
+    }
+    .project-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border: 1px solid var(--rule);
+      border-radius: 2px;
+      color: var(--muted);
+    }
+    .project-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--accent-light);
+    }
+    .arrow {
+      display: inline-block;
+      transition: transform 0.2s;
+      font-size: 1rem;
+    }
+
+    /* ── ABOUT ──────────────────────────────────────── */
+    .about {
+      padding: 64px 52px;
+      border-top: 1px solid var(--rule);
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      margin-top: 32px;
+    }
+    .about-bio {
+      font-size: 0.95rem;
+      line-height: 1.75;
+      color: #333;
+    }
+    .about-bio p + p { margin-top: 16px; }
+    .about-stats {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      background: var(--rule);
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      overflow: hidden;
+      align-self: flex-start;
+    }
+    .stat {
+      background: var(--card-bg);
+      padding: 20px 24px;
+    }
+    .stat-num {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.8rem;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .stat-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* ── WHY EL ─────────────────────────────────────── */
+    .why {
+      padding: 64px 52px;
+      border-top: 1px solid var(--rule);
+      background: var(--accent);
+      color: var(--paper);
+    }
+    .why .section-label { color: rgba(255,255,255,0.4); }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 4px;
+      overflow: hidden;
+      margin-top: 32px;
+    }
+    .why-card {
+      padding: 28px 24px;
+      background: var(--accent);
+    }
+    .why-icon {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 12px;
+    }
+    .why-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    .why-body {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.65;
+    }
+
+    /* ── FOOTER ─────────────────────────────────────── */
+    footer {
+      padding: 24px 52px;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.75rem;
+      color: var(--muted);
+      background: var(--paper);
+    }
+    footer a {
+      color: var(--accent-light);
+      text-decoration: none;
+    }
+    footer a:hover { text-decoration: underline; }
+
+    /* ── RESPONSIVE ─────────────────────────────────── */
+    @media (max-width: 720px) {
+      header, .hero, .divider, .projects, .about, .why, footer {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+      .project-grid, .about-grid, .why-grid {
+        grid-template-columns: 1fr;
+      }
+      h1 { font-size: 2.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Natalie <span>Kang</span></div>
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="https://github.com/natknataliek" target="_blank">GitHub</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="eyebrow">GTM · Operations · AI</div>
+  <h1>Building things that make <em>GTM teams</em> move faster.</h1>
+  <p class="hero-body">Senior operator with 15+ years across venture, family office, and cross-border infrastructure. Currently exploring what happens when you put AI tools in the hands of a commercial team — and building the answers.</p>
+  <div class="hero-tags">
+    <span class="tag">ElevenLabs API</span>
+    <span class="tag">GTM Operations</span>
+    <span class="tag">APAC</span>
+    <span class="tag">Voice AI</span>
+    <span class="tag">Event Intelligence</span>
+    <span class="tag">Chief of Staff</span>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="projects" id="projects">
+  <div class="section-label">Projects — built with ElevenLabs API</div>
+  <div class="project-grid">
+
+    <a class="project-card" href="superai.html">
+      <div class="project-num">01</div>
+      <span class="project-badge">Event Intelligence</span>
+      <div class="project-title">SuperAI 2026 — Who to meet and why.</div>
+      <p class="project-desc">Pre-event attendee intelligence for the ElevenLabs APAC team. 12 priority contacts at SuperAI 2026 scored by pipeline fit, seniority, and strategic value. Click any card to hear a voiced briefing — who they are, what to say, and what to watch out for.</p>
+      <div class="project-meta">
+        <span class="project-tag">ElevenLabs API</span>
+        <span class="project-tag">APAC GTM</span>
+        <span class="project-tag">Voice Briefings</span>
+        <span class="project-tag">Scraped Data</span>
+      </div>
+      <div class="project-link">Open tool <span class="arrow">↗</span></div>
+    </a>
+
+    <a class="project-card" href="index.html">
+      <div class="project-num">02</div>
+      <span class="project-badge">GM Productivity</span>
+      <div class="project-title">GM Briefing Tool — meeting prep in under a minute.</div>
+      <p class="project-desc">Paste a meeting brief — prospect context, key talking points, watch-outs — and get a clean voiced summary in seconds. Built for high-velocity APAC GTM teams where the GM has 20 minutes between meetings and needs to be sharp walking in the door.</p>
+      <div class="project-meta">
+        <span class="project-tag">ElevenLabs API</span>
+        <span class="project-tag">Text to Speech</span>
+        <span class="project-tag">GTM Ops</span>
+        <span class="project-tag">Productivity</span>
+      </div>
+      <div class="project-link">Open tool <span class="arrow">↗</span></div>
+    </a>
+
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="section-label">About</div>
+  <div class="about-grid">
+    <div class="about-bio">
+      <p>I'm a senior operator based in Singapore with a background spanning DBS investment advisory, single-family office PE execution, submarine cable infrastructure (authored Malaysia's first majority foreign-owned non-incumbent operator licence), and SC Ventures risk governance.</p>
+      <p>Most recently I joined a climate tech venture as the first non-technical hire and built commercial, governance, and KYC functions from scratch — including a USD 1.5M pipeline in approximately five months.</p>
+      <p>These projects came out of a simple question: what does a GTM Chief of Staff look like if they actually use the product they're supporting? Everything here was built to demonstrate how I'd operate on day one — using ElevenLabs' own API to make the APAC team faster.</p>
+    </div>
+    <div class="about-stats">
+      <div class="stat">
+        <div class="stat-num">15+</div>
+        <div class="stat-label">Years across venture, family office, and infrastructure</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">SGD</div>
+        <div class="stat-label">Singapore Citizen · Based in Singapore</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">APAC</div>
+        <div class="stat-label">Cross-border experience across SEA, Japan, Korea, India</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">0→1</div>
+        <div class="stat-label">First non-technical hire · Built commercial function from scratch</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="section-label">Why ElevenLabs</div>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="why-icon">01 · Product Conviction</div>
+      <div class="why-title">I built with it before applying.</div>
+      <p class="why-body">Every tool on this page runs on ElevenLabs' API. Klarna cut TTR 10x. Revolut cut it 8x. Deutsche Telekom is deploying in-network AI agents. I understand what ElevenLabs is actually selling and why enterprise buyers buy it.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">02 · APAC Grounding</div>
+      <div class="why-title">The region is not an abstraction to me.</div>
+      <p class="why-body">I've worked across Singapore, Malaysia, Japan, Korea, and Southeast Asia. I know how enterprise decisions get made here, who the right contacts are, and what it takes to move from relationship to pipeline in APAC markets.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">03 · Operator Instinct</div>
+      <div class="why-title">I build the infrastructure, not just the plan.</div>
+      <p class="why-body">I've authored greenfield regulatory submissions, built KYC and governance functions, and managed cross-border deal execution. A CoS role means nothing slips — I'm the person who makes sure it doesn't.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>Natalie Kang · Singapore · <a href="https://github.com/natknataliek" target="_blank">github.com/natknataliek</a></span>
+  <span>Built with <a href="https://elevenlabs.io" target="_blank">ElevenLabs API</a></span>
+</footer>
+
+</body>
+</html>
